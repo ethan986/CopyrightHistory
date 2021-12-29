@@ -224,29 +224,83 @@
 		</div>
 	</div>
 
-		<!-- footer -->
-		<footer class="text-center text-white">
-		  <!-- Grid container -->
-		  	<div class="container p-4">
-			    <section>
-			    	<!-- Row 1 of footer -->
-			      	<div class="row">
-			      		<!-- Left info box in row 1 of footer-->
-			      		<div class="col-lg-4 col-md-6 mb-4 mb-mt-5">
-			      	  		<!-- footer section heading -->
-			          		<h5 class="text-uppercase footer-heading">Members</h5>
-			          		<!-- footer section content -->
-			          		<div class="members-box"></div>
-			        	</div>
+	<!-- footer -->
+	<footer class="text-center text-white">
+		<!-- Grid container -->
+		<div class="container p-5">
+			<section>
+				<!-- Row 1 of footer -->
+				<div class="row">
+					<!-- Left info box in row 1 of footer-->
+					<div class="col-lg-4 col-md-6 mb-4 mb-mt-5">
+						<!-- footer section heading -->
+						<h5 class="text-uppercase footer-heading">Members</h5>
+						<!-- footer section content -->
+						<div class="members-box">
+							<div class="row">
+								<div class="col-md-2">
+									<a href="https://www.cam.ac.uk/">
+									<img class="members" src="{{ asset('images/footer_img/img_members/cambridge.png') }}"></a>
+									<a href="https://www.cipil.law.cam.ac.uk/">
+									<img class="members" src="{{ asset('images/footer_img/img_members/cipil.png') }}"></a>
+									<a href="https://www.create.ac.uk/">
+									<img class="members" src="{{ asset('images/footer_img/img_members/CREATe_logo.png') }}"></a>
+									<a href="https://www.gla.ac.uk/">
+									<img class="members" src="{{ asset('images/footer_img/img_members/UoG_logo.png') }}"></a>
 
-			      		<!-- right info box in row 1 of footer-->
-						<div class="col-lg-8 col-md-6 mb- mb-mt-5">
-							<!-- footer section heading -->
-			          		<h5 class="text-uppercase footer-heading">Partners</h5>
-			          		<!-- footer section content -->
-			          		<div class="members-box partners-box"></div>
+								</div>
+							</div>
 						</div>
-			      	</div>
+					</div>
+
+					<!-- right info box in row 1 of footer-->
+					<div class="col-lg-8 col-md-6 mb-mt-5">
+						<!-- footer section heading -->
+						<h5 class="text-uppercase footer-heading">Partners</h5>
+						<!-- footer section content -->
+						<div class="row">
+							<div class="col-md-3 mt-3"><a href="https://www.aladda.es/"><img class="partners-size" src="{{ asset('images/footer_img/img_partners/aladda.jpg') }}"></a></div>
+							<div class="col-md-3 mt-3"><a href="https://www.nationalarchives.gov.uk/"><img class="partners-size" src="{{ asset('images/footer_img/img_partners/ArchivesNationalesParis.png') }}"></a></div>
+							<div class="col-md-3 mt-3"><a href="https://www.bijzonderecollecties.uva.nl/en/"><img class="partners-size" src="{{ asset('images/footer_img/img_partners/BC-UoA.png') }}"></a></div>
+							<div class="col-md-3 mt-3"><a href="https://staatsbibliothek-berlin.de/"><img class="partners-size" src="{{ asset('images/footer_img/img_partners/Berlin.jpg') }}"></a></div>
+						</div>
+						<div class="row">
+							<div class="col-md-3 mt-3"><a href="https://marciana.venezia.sbn.it/"><img class="partners-size" src="{{ asset('images/footer_img/img_partners/BibliotecaMarciana.jpg') }}"></a></div>
+							<div class="col-md-3 mt-3"><a href="https://www.bnf.fr/"><img class="partners-size" src="{{ asset('images/footer_img/img_partners/BiblNatdeFrance.png') }}"></a></div>
+							<div class="col-md-3 mt-3"><a href="https://www.is.bham.ac.uk/index.shtml"><img class="partners-size" src="{{ asset('images/footer_img/img_partners/Birmingham.jpg') }}"></a></div>
+							<div class="col-md-3 mt-3"><a href="https://www.bl.uk/"><img class="partners-size" src="{{ asset('images/footer_img/img_partners/british_library.jpg') }}"></a></div>
+						</div>
+						<div class="row">
+							<div class="col-md-3 mt-3"><a href="https://www.bsb-muenchen.de/"><img class="partners-size" src="{{ asset('images/footer_img/img_partners/BSB.jpg') }}"></a></div>
+							<div class="col-md-3 mt-3"><a href="https://www.dla-marbach.de/startseite/index.html"><img class="partners-size" src="{{ asset('images/footer_img/img_partners/DLA.jpg') }}"></a></div>
+							<div class="col-md-3 mt-3"><a href="https://www.hab.de/"><img class="partners-size" src="{{ asset('images/footer_img/img_partners/HAB.jpg') }}"></a></div>
+							<div class="col-md-3 mt-3"><a href="https://kb.nl/"><img class="partners-size" src="{{ asset('images/footer_img/img_partners/kb.png') }}"></a></div>
+						</div>
+						<div class="row">
+							<div class="col-md-3 mt-3"><a href="https://www.loc.gov/index.html"><img class="partners-size" src="{{ asset('images/footer_img/img_partners/LOC.jpg') }}"></a></div>
+							<div class="col-md-3 mt-3"><a href="https://www.mcu.es/"><img class="partners-size" src="{{ asset('images/footer_img/img_partners/LogGobEspanaMCU_Color.jpg') }}"></a></div>
+							<div class="col-md-3 mt-3"><a href="https://www.uoc.edu/"><img class="partners-size" src="{{ asset('images/footer_img/img_partners/logo_blau_uoc.jpg') }}"></a></div>
+							<div class="col-md-3 mt-3"><a href="https://www.rg.mpg.de/en/info/start/?en"><img class="partners-size" src="{{ asset('images/footer_img/img_partners/MaxPlanckInst.jpg') }}"></a></div>
+						</div>
+						<div class="row">
+							<div class="col-md-3 mt-3"><a href="https://www.archivesnationales.culture.gouv.fr/"><img class="partners-size" src="{{ asset('images/footer_img/img_partners/NationalArchives.jpg') }}"></a></div>
+							<div class="col-md-3 mt-3"><a href="https://www.onb.ac.at/"><img class="partners-size" src="{{ asset('images/footer_img/img_partners/ONB.jpg') }}"></a></div>
+							<div class="col-md-3 mt-3"><a href="https://www.parliament.uk/parliamentary_publications_and_archives/parliamentary_archives.cfm"><img class="partners-size" src="{{ asset('images/footer_img/img_partners/ParliamentArchive.jpg') }}"></a></div>
+							<div class="col-md-3 mt-3"><a href="https://scd.univ-poitiers.fr/"><img class="partners-size" src="{{ asset('images/footer_img/img_partners/Poitiers.jpg') }}"></a></div>
+						</div>
+						<div class="row">
+							<div class="col-md-3 mt-3"><a href="https://www.slub-dresden.de/"><img class="partners-size" src="{{ asset('images/footer_img/img_partners/SLUB.jpg') }}"></a></div>
+							<div class="col-md-3 mt-3"><a href="https://www.stationers.org/"><img class="partners-size" src="{{ asset('images/footer_img/img_partners/StationersComp.jpg') }}"></a></div>
+							<div class="col-md-3 mt-3"><a href="https://www.utexas.edu/"><img class="partners-size" src="{{ asset('images/footer_img/img_partners/Texas.jpg') }}"></a></div>
+							<div class="col-md-3 mt-3"><a href="https://www.copyright.gov/"><img class="partners-size" src="{{ asset('images/footer_img/img_partners/USCopyrightOffice.jpg') }}"></a></div>
+						</div>
+						<div class="row">
+							<div class="col-md-3 mt-3"><a href="https://asv.vatican.va/?lang=en"><img class="partners-size" src="{{ asset('images/footer_img/img_partners/VaticanArchives.jpg') }}"></a></div>
+							<div class="col-md-3 mt-3"><a href="https://www.archiviodistatovenezia.it/"><img class="partners-size" src="{{ asset('images/footer_img/img_partners/VenetianVirtualArchive.jpg') }}"></a></div>
+						</div>
+					</div>
+				</div>
+				<br><br><br>
 
 			      	<!-- Row 2 of footer -->
 			      	<div class="row">
