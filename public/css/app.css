@@ -1,0 +1,273 @@
+/* Full site changes */
+	/* changes full sites font to Barlow(font specified by create) */
+	body {
+		font-family: 'Barlow' !important;
+	}
+
+	/* remove the outline around input boxes when clicked on ,over
+	full site*/
+	*:focus {
+		outline: none !important;
+	}
+	/* Changes highlight colour to an orange across whole site */
+	::selection {
+  		background: #FFB950;
+	}
+
+	/* checkbox classes change appearance of checkboxes over site */
+	.checkbox-style {
+		width: 15px;
+		height: 15px;
+    	background-color: white;
+    	border-radius: 50%;
+    	vertical-align: middle;
+    	border: 2px solid #F39200;
+    	appearance: none;
+    	-webkit-appearance: none;
+    	outline: none;
+    	cursor: pointer;
+	}
+
+	.checkbox-style:checked {
+   		background-color: #F39200;
+	}
+
+	/* formats input for date entry across whole site */
+	.date-style {
+		border: 0;
+		border-radius: 5px;
+		background-color: #FFF4E4;
+		color: lightgray;
+	}
+
+/* Navbar */
+
+	/* Changes the Navbar active page color on navbar  */
+	.active{
+		color:#F39200 !important ;
+		font-weight: bold !important;
+	}
+	/* ensures Company Logo is the correct Size */
+	.logo {
+		height: 60px !important;
+	}
+	/* ensures Search Icon and Exit Icon are the correct Size */
+	.sicon {
+		height: 40px !important;
+	}
+	/* ensures navbar items are black */
+	a {
+		color: black !important;
+	}
+	/* edits the hamburger icon within the nav bar to remove
+	the default border */
+	.navbar-light .navbar-toggler {
+		border-color: transparent !important;
+	}
+
+/* Banner */
+
+	/* Additional formatting for banner  */
+	.jumbotron {
+		background-image: url("../static/banner_img/Banner_empty.jpg");
+		background-size: cover;
+		height: 350px;
+		width: 100%;
+		position: relative;
+		z-index: -100;
+		color: white;
+		padding-top: 100px !important;
+	}
+
+	/* vertically aligns the content in the jumbotron  */
+	.vertical-center {
+		display: flex;
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+		flex-direction: column;
+
+	}
+
+/* Overlays */
+
+	/* ensures overlay stays ontop of page used in search overlay and login overlay*/
+	.overlay {
+	  position: fixed;
+	  display: none;
+	  width: 100%;
+	  height: 100%;
+	  top: 0;
+	  left: 0;
+	  background-color: rgba(0,0,0,0.5);
+	  z-index: 1031;
+	  cursor: default;
+	  pointer-events: none
+	}
+	/* Search bar overlay */
+		/* CSS for searchbar within overlay  */
+		#search-bar {
+			width: 100%;
+			background-color: white;
+			border: 0;
+			border-bottom-left-radius: 30px;
+			border-bottom-right-radius: 30px;
+			text-align: center;
+			display: none;
+			transition-duration: 0.05s;
+			overflow: hidden;
+			pointer-events: auto;
+
+
+		}
+		/* CSS for the input bar in the searchbar overlay */
+		.search-input {
+			position: fixed;
+			left: 20%;
+			width: 60%;
+			height: 75px;
+			font-size: 70px;
+			border: 0;
+			outline: 0;
+			background: transparent;
+			border-bottom: 3px solid #F39200;
+
+		}
+		/* Advanced Search Section */
+
+			/* formatting for the text under the search input that says
+			"Open Advanced Search/Close Advanced Search" */
+			#advanced {
+				cursor: pointer;
+				position: fixed;
+				left: 20%;
+				top: 150px;
+				text-decoration: underline;
+				color: darkgray !important;
+			}
+
+			/* Default hidden content for when Open Advanced Search is pressed*/
+			.options-ext {
+				-moz-box-shadow:    inset 0 0 10px rgba(0,0,0,.1);
+   				-webkit-box-shadow: inset 0 0 10px rgba(0,0,0,.1);
+   				box-shadow:         inset 0 0 10px rgba(0,0,0,.1);
+				margin: 90px 0;
+				position: static;
+				overflow: auto;
+				height: 55%;
+				display: none;
+				text-align: left !important;
+				padding-left: 15%;
+				color: #F39200;
+			}
+			/* Stands for Advanced Search Options this is the formatting for the
+			Option buttons that appear when Open Advanced Search is Pressed */
+			.a-s-style {
+				border: none;
+				color: #F39200;
+				font-weight: bold;
+				text-transform: uppercase;
+				background-color: transparent;
+			}
+
+			/* closed is a default for the search bar advanced open extends
+			the vertical height of the search box to allow for additional options
+			to fit in under the input box */
+			.advanced-closed {
+				height: 250px;
+			}
+			.advanced-open {
+				height: auto;
+			}
+
+			/* default hidden option for the drop down menus in advanced settings */
+			.a-s-content {
+				display: none;
+				text-transform: uppercase;
+				color: #F39200;
+			}
+			/* sub headings in advanced search */
+			.a-s-sub {
+				padding-left: 40px;
+			}
+
+
+	/* Login box Overlay */
+
+		/* CSS for login box within overlay */
+			#login-overlay {
+				width: 450px;
+				margin: 12.5% auto;
+				background-color: white;
+				border-radius: 25px;
+				text-align: center;
+				display: none;
+				padding: 10px;
+				padding-top: 25px;
+				transition-duration: 0.15s;
+				pointer-events: auto;
+			}
+
+			/* Formatting for the login button within the login overlay */
+			.login-button {
+				border: solid 2px #F39200;
+				border-radius: 20px;
+				background-color: white;
+				text-transform: uppercase;
+			}
+			/* Makes button appear as if its been clicked when pressed on */
+			.login-button:active {
+				border-color: darkorange;
+				background-color: lightgray;
+			}
+			/* Formatting for the input box in the login overlay */
+			.login-input {
+				border: none;
+				border-bottom: solid 3px #F39200;
+				background-color: transparent;
+			}
+			/* repositions the exit icon within the login overlay */
+			.login-close-icon {
+				text-align: right;
+			}
+
+/* Footer */
+	/* Formatting for footer headings */
+	.footer-heading {
+		color: #F39200 !important;
+		text-align: left;
+		font-weight: bold !important;
+	}
+
+	/* Formatting for members Box within the footer */
+	.members-box {
+		border-radius: 15px;
+		padding: 25px !important;
+		height: 200px;
+		background-size: cover;
+		width: 50%;
+		background-image: url("../static/footer_img/Members.png");
+	}
+	/* Formatting for the partners box within the footer  */
+	.partners-box {
+		background-image: url("../static/footer_img/Partners.png") !important;
+		width: 100% !important;
+	}
+
+	/* adjusts the background colour of the footer */
+	footer {
+
+		background-color: rgba(50,50,50,255) !important;
+	}
+
+/* Main Content */
+
+	.content-container {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+
+	.content-heading{
+		color: #F39200;
+		text-transform: uppercase;
+	}
