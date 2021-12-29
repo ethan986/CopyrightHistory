@@ -19,7 +19,7 @@
 
 	  	<!-- Favicon Import -->
 
-	  		<link rel="shortcut icon" href="../static/favi_img/favicon.ico"/>
+	  		<link rel="shortcut icon" href="{{ asset('images/favi_img/favicon.ico') }}"/>
             
         <!-- Title -->
 
@@ -38,7 +38,7 @@
 		<nav class="navbar fixed-top navbar-expand-lg shadow-sm bg-white navbar-light">
 			<div class="container-fluid">
 				<!-- Brand Logo -->
-		  	<a class="navbar-brand" href="#"><img class="logo" src="../static/nav_img/Logo.png"></a>
+		  	<a class="navbar-brand" href="#"><img class="logo" src="{{ asset('images/nav_img/Logo.png') }}"></a>
 		  	<!-- Menu Bar button -->
 	    	<button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
 	      	<span class="navbar-toggler-icon"></span>
@@ -59,7 +59,7 @@
 		      <!-- Login Button -->
 		      <li class="nav-item"><a onclick="open_login()" class="nav-link" href="#">LOGIN</a></li>
 		      <!-- Search Icon -->
-		      <li class="nav-item"><a onclick="open_search()" class="nav-link mr-auto" href="#"><img class="sicon" src="../static/nav_img/Search Icon.png"></a></li>
+		      <li class="nav-item"><a onclick="open_search()" class="nav-link mr-auto" href="#"><img class="sicon" src="{{ asset('images/nav_img/Search Icon.png') }}"></a></li>
 		    </ul>
 	    	</div>
 	  		</div>
@@ -80,7 +80,7 @@
         <!-- Login Overlay -->
 	<div class="overlay" id="overlay_login">
 		<div id="login-overlay">
-			<span style="text-align: right !important;"><a class="nav-link" href="#"><img onclick="close_login()" class="sicon login-close-icon" src="../static/overlay_img/Exit Icon.png"></a></span>
+			<span style="text-align: right !important;"><a class="nav-link" href="#"><img onclick="close_login()" class="sicon login-close-icon" src="{{ asset('images/overlay_img/Exit Icon.png') }}"></a></span>
 			<h1><b>LOGIN</b></h1>
 			<br>
 			<br>
@@ -100,7 +100,7 @@
 			<!-- Empty navbar used to hold the exit button for overlay -->
 			<nav class="navbar navbar-expand-sm bg-white navbar-light" style="padding-right:10px">
 				<ul class="navbar-nav d-lg-flex align-items-center ms-auto">
-					<li class="nav-item"><a class="nav-link" href="#"><img onclick="close_search()" class="sicon" src="../static/overlay_img/Exit Icon.png"></a></li>
+					<li class="nav-item"><a class="nav-link" href="#"><img onclick="close_search()" class="sicon" src="{{ asset('images/overlay_img/Exit Icon.png') }}"></a></li>
 				</ul>
 			</nav>
 			<!-- Search input bar -->
