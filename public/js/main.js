@@ -13,6 +13,13 @@
 				close_login();
 			};
 		});
+		// code for submitting using enter
+		$('.search-input').keypress(function(e) {
+		    if(e.which == 13) {
+		        alert('You pressed enter!');
+		    }
+		});
+
 
 	// Code for Login Box Overlay
 
@@ -104,3 +111,4 @@
 
 				})
 			});
+
