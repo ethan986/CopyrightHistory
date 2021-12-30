@@ -38,7 +38,7 @@
 		<nav class="navbar fixed-top navbar-expand-lg shadow-sm bg-white navbar-light">
 			<div class="container-fluid">
 				<!-- Brand Logo -->
-		  	<a class="navbar-brand" href="#"><img class="logo" src="{{ asset('images/nav_img/Logo.png') }}"></a>
+		  	<a class="navbar-brand" href="."><img class="logo" src="{{ asset('images/nav_img/Logo.png') }}"></a>
 		  	<!-- Menu Bar button -->
 	    	<button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
 	      	<span class="navbar-toggler-icon"></span>
@@ -46,12 +46,12 @@
 	    	<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
 	    	<!-- Left Aligned content on nav bar -->
 		    <ul class="navbar-nav d-lg-flex align-items-center">
-		      <li class="nav-item"><a class="nav-link active" href="#">FAQ</a></li>
-		      <li class="nav-item"><a class="nav-link" href="#">NEWS</a></li>
-		      <li class="nav-item"><a class="nav-link" href="#">EDITORIAL BOARD</a></li>
-		      <li class="nav-item"><a class="nav-link" href="#">ACKNOWLEDGEMENTS</a></li>
-		      <li class="nav-item"><a class="nav-link" href="#">DIGITAL ARCHIVE</a></li>
-			  <li class="nav-item"><a class="nav-link" href="#">CONTACT</a></li>
+		      <li class="nav-item"><a class="nav-link active" href="{{ url('FAQ') }}">FAQ</a></li>
+		      <li class="nav-item"><a class="nav-link" href="{{ url('news') }}">NEWS</a></li>
+		      <li class="nav-item"><a class="nav-link" href="{{ url('editorial-board') }}">EDITORIAL BOARD</a></li>
+		      <li class="nav-item"><a class="nav-link" href="{{ url('acknowledgements') }}">ACKNOWLEDGEMENTS</a></li>
+		      <li class="nav-item"><a class="nav-link" href="{{ url('digital-archive') }}">DIGITAL ARCHIVE</a></li>
+			  <li class="nav-item"><a class="nav-link" href="{{ url('contact') }}">CONTACT</a></li>
 		    </ul>
 		    <!-- Right aligned content on nav bar -->
 		    <ul class="navbar-nav align-items-center ms-auto">
@@ -67,13 +67,15 @@
 
         <!-- Banner and banner content -->
         <div class="jumbotron text-center vertical-center pad-top-100">
-            <h1 class="display-4">PRIMARY SOURCES ON COPYRIGHT</h1>
-            <h3>1450-1900</h3>
+            <h1 class="display-4">@yield('bannerTitle')</h1>
+            <h3>@yield('bannerSubtitle')</h3>
         </div>
 
+        <div class="container content-container">
+	        <!-- yielding to non-template page -->
+	        @yield('content')
+        </div>
 
-        <!-- yielding to non-template page -->
-        @yield('content')
 
 
 
@@ -84,11 +86,14 @@
 			<h1><b>LOGIN</b></h1>
 			<br>
 			<br>
-			<input placeholder="username" class="login-input" type="email" name="email">
-			<br><br>
-			<input placeholder="password" class="login-input" type="password" name="pass">
-			<br><br>
-			<button class="login-button">LOGIN</button>
+			<form action="">
+				<input placeholder="username" class="login-input" type="email" name="email">
+				<br><br>
+				<input placeholder="password" class="login-input" type="password" name="pass">
+				<br><br>
+			
+			<button type="submit" class="login-button" onclick="close_login()">LOGIN</button>
+			</form>
 			<br><br><br>
 		</div>
 	</div>
@@ -104,7 +109,12 @@
 				</ul>
 			</nav>
 			<!-- Search input bar -->
-			<input placeholder="Search..." type="search" class="search-input"><br>
+			<input placeholder="Search..." type="search" class="search-input" id="search">
+
+			<a id="search-submit" href="{{ url('digital-archive') }}">
+				<img class="sicon" src="{{ asset('images/nav_img/Search Icon.png') }}">
+			</a>
+			<br>
 			<!-- Advanced Options Button -->
 			<a id="advanced" onclick="toggle_advanced()">Open Advanced Options</a>
 			<!-- Advanced Options content categorised by expandable menu headings -->

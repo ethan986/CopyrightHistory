@@ -140,7 +140,42 @@
 			outline: 0;
 			background: transparent;
 			border-bottom: 3px solid #F39200;
+			transition-duration: 0.2s;
+		}
 
+		/* removes search placeholder on click instead of typing */
+		.search-input:focus::placeholder {
+			opacity: 0;
+			padding-left: 10px;
+			transition-duration: 0.2s;
+		}
+
+		/* when search bar clicked on search submit button appears */
+		.search-input:focus + a {
+				opacity: 1 !important;
+				z-index: 20000;
+				right: 18% !important;
+				transition-duration: 0.2s;
+		}
+
+		/* button to allow users to search */
+		#search-submit{
+			opacity: 0;
+			position: fixed;
+			top: 75px !important;
+			width: 72px;
+			height: 72px;
+			right: 15%;
+			padding: 5px;
+			text-decoration: none !important;
+			border-radius: 0px;
+			transition-duration: 0.2s;
+		}
+		
+		#search-submit>img{
+
+			width: 100%;
+			height: 100% !important;
 		}
 		/* Advanced Search Section */
 
@@ -274,6 +309,10 @@
 		max-width: 80px;
     	max-height: 40px;
 	}
+	/* greyscales non grey partners and members in the footer */
+	.row>div>a>img{
+		filter: grayscale(100%);
+	}
 
 	/* adjusts the background colour of the footer */
 	footer {
@@ -292,4 +331,29 @@
 		font-weight: bold;
 		color: #F39200;
 		text-transform: uppercase;
+	}
+
+/* Digital Archive */
+
+	/* align content and adjust size of overall table */
+	.result-table {
+		width: 100%;
+		text-align: center;
+		margin: 0 auto;
+		padding: 5px;
+
+	}
+
+	/* allocate 20% screen width to the year content */
+	th.year {
+		width: 20%;
+	}
+	/* allocate 80% screen width to the document name content */
+	td.document-name {
+		width: 80%;
+	}
+
+	/* changes the background colour of each odd line number of the table */
+	tr:nth-child(odd){
+		background-color: #FFF4E4;
 	}
