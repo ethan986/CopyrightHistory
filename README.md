@@ -43,3 +43,8 @@ This web app is made to the specifcation of the CREATe team.
 <br>
 
 > Finally to run the server use ``` % php artisan serve ``` and navigate to <b>127.0.0.1:8000</b> in your browser
+
+
+## Wireframes and Mockups
+
+https://www.figma.com/file/msKggATd8zORxoBqKIj9CL/Copyright-History
