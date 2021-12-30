@@ -1,5 +1,7 @@
 # Copyright History (CS35 Team Project)
-A small web app built in laravel.
+A small web app built in laravel as a team project for our 3rd year team project at the University of Glasgow.
+
+This web app is made to the specifcation of the CREATe team.
 
 ### Team Members
 <table style="margin: 25px 25px">
