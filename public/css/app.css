@@ -1,4 +1,13 @@
 /* Full site changes */
+
+	/* initialisation of site variables */
+	:root{
+		--text-orange: #F39200; /* overall sites orange text colour */
+		--text-light-orange: #FFB950; /* lighter alternative colour used for highlight*/
+
+		--table-background-orange: #FFF4E4; /* colour for use in tables in site */
+	}
+
 	/* changes full sites font to Barlow(font specified by create) */
 	body {
 		font-family: 'Barlow' !important;
@@ -11,7 +20,7 @@
 	}
 	/* Changes highlight colour to an orange across whole site */
 	::selection {
-  		background: #FFB950;
+  		background: var(--text-light-orange);
 	}
 
 	/* checkbox classes change appearance of checkboxes over site */
@@ -21,7 +30,7 @@
     	background-color: white;
     	border-radius: 50%;
     	vertical-align: middle;
-    	border: 2px solid #F39200;
+    	border: 2px solid var(--text-orange);
     	appearance: none;
     	-webkit-appearance: none;
     	outline: none;
@@ -29,7 +38,7 @@
 	}
 
 	.checkbox-style:checked {
-   		background-color: #F39200;
+   		background-color: var(--text-orange);
 	}
 
 	/* formats input for date entry across whole site */
@@ -52,7 +61,7 @@
 
 	/* Changes the Navbar active page color on navbar  */
 	.active{
-		color:#F39200 !important ;
+		color:var(--text-orange) !important ;
 		font-weight: bold !important;
 	}
 	/* ensures Company Logo is the correct Size */
@@ -107,7 +116,7 @@
 	  height: 100%;
 	  top: 0;
 	  left: 0;
-	  background-color: rgba(0,0,0,0.5);
+	  background-color: rgba(0,0,0,0.5); /* opaque black */
 	  z-index: 1031;
 	  cursor: default;
 	  pointer-events: none
@@ -139,7 +148,7 @@
 			border-radius: 0;
 			outline: 0;
 			background: transparent;
-			border-bottom: 3px solid #F39200;
+			border-bottom: 3px solid var(--text-orange);
 			transition-duration: 0.2s;
 		}
 
@@ -202,13 +211,13 @@
 				display: none;
 				text-align: left !important;
 				padding-left: 15%;
-				color: #F39200;
+				color: var(--text-orange);
 			}
 			/* Stands for Advanced Search Options this is the formatting for the
 			Option buttons that appear when Open Advanced Search is Pressed */
 			.a-s-style {
 				border: none;
-				color: #F39200;
+				color: var(--text-orange);
 				font-weight: bold;
 				text-transform: uppercase;
 				background-color: transparent;
@@ -228,7 +237,7 @@
 			.a-s-content {
 				display: none;
 				text-transform: uppercase;
-				color: #F39200;
+				color: var(--text-orange);
 			}
 			/* sub headings in advanced search */
 			.a-s-sub {
@@ -254,7 +263,7 @@
 
 			/* Formatting for the login button within the login overlay */
 			.login-button {
-				border: solid 2px #F39200;
+				border: solid 2px var(--text-orange);
 				border-radius: 20px;
 				background-color: white;
 				text-transform: uppercase;
@@ -267,7 +276,7 @@
 			/* Formatting for the input box in the login overlay */
 			.login-input {
 				border: none;
-				border-bottom: solid 3px #F39200;
+				border-bottom: solid 3px var(--text-orange);
 				background-color: transparent;
 			}
 			/* repositions the exit icon within the login overlay */
@@ -278,7 +287,7 @@
 /* Footer */
 	/* Formatting for footer headings */
 	.footer-heading {
-		color: #F39200 !important;
+		color: var(--text-orange) !important;
 		text-align: left;
 		font-weight: bold !important;
 	}
@@ -329,7 +338,7 @@
 
 	.content-heading{
 		font-weight: bold;
-		color: #F39200;
+		color: var(--text-orange);
 		text-transform: uppercase;
 	}
 
@@ -355,5 +364,5 @@
 
 	/* changes the background colour of each odd line number of the table */
 	tr:nth-child(odd){
-		background-color: #FFF4E4;
+		background-color: var(--table-background-orange);
 	}
