@@ -1,4 +1,6 @@
 @extends('layouts/index')
+	<!-- Navbar active-->
+	@section('faq-link','active')
 	<!-- Title -->
 	@section('title','- FAQ')
 	<!-- banner content -->

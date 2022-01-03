@@ -1,4 +1,6 @@
 @extends('layouts/index')
+	<!-- Navbar active-->
+	@section('da-link','active')
 	<!-- Title -->
 	@section('title','- Digital Archive')
 	<!-- banner content -->
