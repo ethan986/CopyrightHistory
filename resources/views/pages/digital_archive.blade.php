@@ -8,6 +8,10 @@
 
 	@section('content')
 
+	<h1>Digital Archive</h1>
+	<br>
+	<p>no content here currently</p>
+	<br>
 	<h1 class="content-heading">Search Results</h1>
 
 	<table id="search-results" class="result-table" style="text-align: center;">

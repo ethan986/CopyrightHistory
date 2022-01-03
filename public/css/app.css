@@ -339,6 +339,16 @@
 		text-transform: uppercase;
 	}
 
+	h3 {
+		padding-left: 20px;
+	}
+
+	p{
+		padding-left: 40px;
+	}
+
+	
+
 /* Digital Archive */
 
 	/* align content and adjust size of overall table */
