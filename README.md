@@ -33,17 +33,26 @@ This web app is made to the specifcation of the CREATe team.
 > Ensure composer,laravel and php installed on your system
 <br>
 
-> navigate to the project directory i.e. ```zsh % cd CopyrightHistory ```
+> navigate to the project directory i.e. 
+```zsh 
+% cd CopyrightHistory 
+```
 <br>
 
 > duplicate the <i>.env.example</i> file and rename it <i>.env</i>
 <br>
 
-> run ```zsh % php artisan key:generate```zsh in the same directory
+> run 
+```
+zsh % php artisan key:generate
+```
 <br>
 
-> Finally to run the server use ```zsh % php artisan serve ``` and navigate to <b>127.0.0.1:8000</b> in your browser
-
+> Finally to run the server use 
+```
+zsh % php artisan serve 
+``` 
+> Navigate to <b>127.0.0.1:8000</b> in your browser
 
 ## Wireframes and Mockups
 
