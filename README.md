@@ -43,14 +43,14 @@ This web app is made to the specifcation of the CREATe team.
 <br>
 
 > run 
-```
-zsh % php artisan key:generate
+```zsh 
+% php artisan key:generate
 ```
 <br>
 
 > Finally to run the server use 
-```
-zsh % php artisan serve 
+```zsh 
+% php artisan serve 
 ``` 
 > Navigate to <b>127.0.0.1:8000</b> in your browser
 
